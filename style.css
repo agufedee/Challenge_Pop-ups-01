@@ -1,0 +1,135 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue-p: #2c3e50;
+    --blue-hov: #1e2a36;
+    --orange: #ed6755;
+    --orange-hov: #c45445;
+    --background: #e6e0e0;
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative; 
+}
+
+.cardContainer {
+    background-color: var(--white);
+    width: 432px;
+    height: 399px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.cardContainer img {
+    margin-top: 13%;
+}
+
+.cardContainer p {
+    color: var(--black);
+    font-size: 1.2em;
+    text-align: center;
+    width: 70%;
+}
+
+.cardContainer .btn1 {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 5% 14%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    box-shadow: 0 3px 10px gray;
+}
+
+.cardContainer button:hover {
+    background-color: var(--orange-hov);
+}
+
+.cardContainer span i {
+    position: absolute;
+    color: gray;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.cardContainer span i:hover {
+    font-size: 1.1em;
+}
+
+.btnNext {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px gray;
+    border-radius: 50%;
+}
+
+.btnNext a i {
+    color: var(--blue-p);
+    font-size: 3em;   
+}
+
+.btnNext a i:hover {
+    font-size: 3.1em;
+}
+
+/* ------------------------------------------ */
+
+.cardContainer .btn2 {
+    background-color: var(--blue-p);
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 5% 14%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    box-shadow: 0 3px 10px gray;
+}
+
+.cardContainer button:hover {
+    background-color: var(--blue-hov);
+}
+
+.btnBack {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px gray;
+    border-radius: 50%;
+}
+
+.btnBack a i {
+    color: var(--orange);
+    font-size: 3em;   
+}
+
+.btnBack a i:hover {
+    font-size: 3.1em;
+}
