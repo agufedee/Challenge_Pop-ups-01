@@ -110,7 +110,7 @@ body {
     box-shadow: 0 3px 10px gray;
 }
 
-.cardContainer button:hover {
+.cardContainer btn2:hover {
     background-color: var(--blue-hov);
 }
 
