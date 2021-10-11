@@ -59,7 +59,7 @@ body {
     box-shadow: 0 3px 10px gray;
 }
 
-.cardContainer btn1:hover {
+.cardContainer .btn1:hover {
     background-color: var(--orange-hov);
 }
 
