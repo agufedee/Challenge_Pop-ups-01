@@ -16,6 +16,7 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
+/* Botones de Abrir */
 .popUp {
     display: flex;
     justify-content: center;
@@ -41,6 +42,7 @@ body {
     background-color: var(--blue-hov);
 }
 
+/* Overlay 1 */
 .containerCookies {
     display: none;
     justify-content: center;
@@ -51,12 +53,15 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+
+    
 }
 
 .containerCookies.active {
     display: flex;
 }
 
+/* PopUp Cookies */
 .cardContainer {
     background-color: var(--white);
     width: 432px;
@@ -67,6 +72,7 @@ body {
     align-items: center;
     justify-content: space-around;
     position: relative;
+
 }
 
 .cardContainer img {
@@ -109,6 +115,7 @@ body {
     color: rgb(78, 78, 78);
 }
 
+/* PopUp Sesion */
 .containerSesion {
     display: none;
     justify-content: center;
@@ -176,7 +183,3 @@ body {
     font-size: 1.1em;
     color: rgb(78, 78, 78);
 }
-
-
-
-
