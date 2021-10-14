@@ -16,12 +16,45 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
-.container {
-    height: 100vh;
+.popUp {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.popUp .popupCookies, .popupSesion {
+    background-color: var(--blue-p);
+    color: var(--white);
+    font-size: 2em;
+    padding: 2% 5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px gray;
+    transition: .5s ease;
+    width: 40%;
+}
+
+.popUp .popupCookies:hover, .popupSesion:hover {
+    background-color: var(--blue-hov);
+}
+
+.containerCookies {
+    display: none;
+    justify-content: center;
     align-items: center;  
-    position: relative; 
+    background-color: rgba(0,0,0,.2); 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.containerCookies.active {
+    display: flex;
 }
 
 .cardContainer {
@@ -63,42 +96,59 @@ body {
     background-color: var(--orange-hov);
 }
 
-.cardContainer span i {
+.cardContainer .cerrarPopup i {
     position: absolute;
     color: gray;
-    position: absolute;
     top: 20px;
     right: 25px;
     cursor: pointer;
 }
 
-.cardContainer span i:hover {
+.cardContainer .cerrarPopup i:hover {
     font-size: 1.1em;
+    color: rgb(78, 78, 78);
 }
 
-.btnNext {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px gray;
-    border-radius: 50%;
+.containerSesion {
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    background-color: rgba(0,0,0,.2); 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-.btnNext a i {
-    color: var(--blue-p);
-    font-size: 3em;   
+.containerSesion.active {
+    display: flex;
 }
 
-.btnNext a i:hover {
-    font-size: 3.1em;
+.cardContainer2 {
+    background-color: var(--white);
+    width: 432px;
+    height: 399px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
 }
 
-/* ------------------------------------------ */
+.cardContainer2 img {
+    margin-top: 13%;
+}
 
-.cardContainer .btn2 {
+.cardContainer2 p {
+    color: var(--black);
+    font-size: 1.2em;
+    text-align: center;
+    width: 70%;
+}
+
+.cardContainer2 .btn2 {
     background-color: var(--blue-p);
     color: var(--white);
     font-size: 1.2em;
@@ -110,26 +160,23 @@ body {
     box-shadow: 0 3px 10px gray;
 }
 
-.cardContainer .btn2:hover {
+.cardContainer2 .btn2:hover {
     background-color: var(--blue-hov);
 }
 
-.btnBack {
-    padding: 0;
-    margin: 0;
+.cardContainer2 .cerrarPopup i {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px gray;
-    border-radius: 50%;
+    color: gray;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
 }
 
-.btnBack a i {
-    color: var(--orange);
-    font-size: 3em;   
+.cardContainer2 .cerrarPopup i:hover {
+    font-size: 1.1em;
+    color: rgb(78, 78, 78);
 }
 
-.btnBack a i:hover {
-    font-size: 3.1em;
-}
+
+
+

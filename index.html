@@ -11,18 +11,32 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="popUp">
+        <button class="popupCookies" id="popupCookies">Cookies</button>
+        <button class="popupSesion" id="popupSesion">Sesión</button>
+    </div>
+
+    <div class="containerCookies" id="overlay">
         <div class="cardContainer">
             <img src="./assets/Saly-27.png" alt="">
 
             <p>Utilizamos cookies para mejorar la experiencia de usuario, la analitica y el marketing.</p>
             <button class="btn1">¡Eso está Bien!</button>
-            <span><i class="fas fa-times"></i></span>
+
+            <a href="#" class="cerrarPopup" id="cerrarPopupCookies"><i class="fas fa-times"></i></a>
+        </div> 
+
+    </div>
+    <div class="containerSesion" id="overlay2">
+        <div class="cardContainer2">
+            <img src="./assets/Frame.png" alt="">
+            <p>¡Se cerrará la sesión inmediatamente!</p>
+            <button class="btn2">Ampliar Sesion</button>
+            
+            <a href="#" class="cerrarPopup" id="cerrarPopupSesion"><i class="fas fa-times"></i></a>
         </div>
     </div>
-    
-    <div class="btnNext">
-        <a href="./fin-sesion.html"><i class="fas fa-arrow-circle-right"></i></a>
-    </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
